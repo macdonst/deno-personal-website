@@ -1,0 +1,19 @@
+{
+  "name": "begin-app",
+  "version": "0.0.0",
+  "description": "Basic Begin personal website",
+  "scripts": {
+    "start": "sandbox",
+    "test": "cross-env NODE_ENV=testing PORT=6666 tape test/*-test.js ./test/**/*-test.js | tap-spec"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  },
+  "dependencies": {
+    "@architect/sandbox": "^4.4.2",
+    "@begin/data": "^3.0.4",
+    "tap-spec": "^5.0.0",
+    "tape": "^5.3.2",
+    "tiny-json-http": "^7.3.1"
+  }
+}
